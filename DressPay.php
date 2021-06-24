@@ -68,7 +68,6 @@ class Payment_Adapter_DressPay extends Payment_AdapterAbstract implements \Box\I
     reset($parameter);
     $data = $parameter;
     $data['sign'] = $this->_generateSignature($parameter);
-    $data['sign_type'] = 'MD5';
 
     return $data;
     }
