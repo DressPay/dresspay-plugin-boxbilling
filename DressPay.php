@@ -46,7 +46,7 @@ class Payment_Adapter_DressPay extends Payment_AdapterAbstract implements \Box\I
     public function getServiceUrl()
     {
         if($this->testMode) {
-            return 'https://api-test.dresspay.org/gateway';
+            return 'https://api.dresspay.org/testgateway';
         }
             return 'https://api.dresspay.org/gateway';
     }
